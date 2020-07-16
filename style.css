@@ -1,0 +1,113 @@
+ body {
+     background-color: rgb(203, 190, 204);
+
+     font-family:Arial, Helvetica, sans-serif;
+color: rgb(137, 79, 142);
+font-weight: bolder;
+}
+#container{
+
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: 60px auto;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 6px 8px rgba(0,0,0,0.11),
+              0 8px 16px rgba(0,0,0,0.11);
+}
+
+#header_cal{
+ margin: 5px;
+ width: 100%;
+ padding: 10px;
+ justify-content: center;
+ 
+ box-sizing: border-box;
+ background-color: rgb(230, 229, 229);
+}
+#screen_cal{
+
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 1px;
+    text-align: right;
+    background-color: white;
+    color: rgb(48, 48, 48);
+    border-top: 1.4px solid #ab7192;
+    overflow: hidden;
+}
+h3,h4,h5,h6{
+
+    margin: 12px;
+    font-weight: lighter;
+    
+}
+
+button {
+
+background-color: rgb(173, 52, 112);
+color: whitesmoke;
+border: none;
+text-decoration: none;
+outline: 0px;
+ transition: all 1 ease-in;
+}
+
+button:hover{
+
+    background-color: rgb(156, 46, 101);
+    cursor: pointer;
+    
+ }
+
+
+
+#cal_digit{
+width: 100%;
+display: flex;
+flex: row;
+
+}
+#cal_digit_number{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  flex-wrap: wrap;
+}
+.button_number{
+width: 30%;
+margin: 1px;
+padding: 1.5rem;
+font-size: 1rem;
+box-sizing: border-box;
+
+}
+
+
+#cal_digit_sign{
+
+display: flex;
+font-size: 1.3rem;
+width: 30%;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-end;
+}
+
+.button_sign{
+width: 48%;
+margin: 1px;
+box-sizing: border-box;
+
+}
+@media only screen and (max-width: 590px) {
+    #container {
+      width: 100%;
+    }
+  }
